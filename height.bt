@@ -1,0 +1,29 @@
+class solution {
+public :
+int heightstruct(Node * node ){
+
+//base case
+if(node == null){
+return 0 ;
+}
+
+int left = height(node->left);
+int right = height(node-> right);
+int ans = max( left + right ) +1 ;
+return ans ;
+
+int main(
+{
+int t; 
+scanf("%d" , &t );
+while(t--){
+string treestring ;
+
+geline(cin , treestring);
+Node*root = buildtree(treestring);
+solution ob;
+cout<<ob.height(root)<<endl;
+}
+return 0;
+
+
